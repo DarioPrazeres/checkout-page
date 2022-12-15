@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Montserrat;
+    border: solid 1px saddlebrown;
+}
+.body-project{
+    width: 75%;
+    margin-top: 50px;
+}
+h1{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+p{
+    margin: 5px 0px 5px 0px;
+}
+.tab{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    border: solid 1px rgb(19, 29, 139);
+}
+.tab-1{
+    width: 70%;
+}
+/*-----------Form Style --------------- */
+.tab-1 input{
+    border: none;
+}
+.tab-1 input:focus{
+    border: none;
+    outline: none;
+}
+.email-form{
+    height: 40px;
+    border: solid 1px silver;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.email, .phone{
+    height: 36px;
+    margin-left: 4px;
+    font-size: 18px;
+}
