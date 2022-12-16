@@ -6,13 +6,13 @@ body{
     display: flex; 
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     font-family: Montserrat;
     color: #4e5150;
 }
 .body-project{
-    margin-top: 50px;
-    border: solid 1px red;
+    margin-top: 100px;
 }
 /*--------------- General Style-----------*/
 h1{
@@ -29,16 +29,13 @@ p{
     font-size: 16px; 
 }
 .tab{
-    display: grid;
-    grid-template-columns: 600px 385px;
-    gap: 50px;
+    display: flex;
 }
-/*
 .tab-1{
-    border: solid 1px rgb(4, 4, 4);
+   width: 600px;
 }
  .tab-2{
-    border: solid 1px red;
+    width: 385px;
 }
 /*-----------Form Style --------------- */
 .tab-1 input{
@@ -58,6 +55,7 @@ p{
     border-radius: 6px;
     display: flex;
     align-items: center;
+    margin: 15px 0px 10px 0px;
 }
 .input-form img{
     margin: 0px 4px 0px 4px;
@@ -80,9 +78,13 @@ p{
     display: grid;
     width: 470px;
     grid-template-columns: repeat(2, 50%);
+    margin-top: 10px;
 }
 input.check{
     width: 23px;
+}
+.p-check{
+    margin-top: 10px;
 }
 /*------------Product Style-------------*/
 .tab-2{
@@ -135,4 +137,49 @@ input.check{
     height: 21.2px;
     color: #e0e0e0;
     background-color: #8f8c8c;
+}
+/*-----------Fotter Style ----------------*/
+footer{
+    margin-top: 150px;
+}
+footer p{
+    text-align: center;
+    color: #BDBDBD;
+    font-size: 16px;
+}
+footer a{
+    color: rgb(103, 102, 102);
+}
+/*----------Mobile Version ---------*/
+@media only screen and (max-width: 800px) {
+    body{
+        margin-left: 20px;
+    }
+    .body-project{
+        margin-top: 50px;
+        width: 95%;
+    }
+    .tab{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab-1{
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .group-form{
+        width: 97%;
+    }
+}
+@media only screen and (max-width:500px){
+    .tab-1{
+        width: 97%;
+    }
+    .input-form{
+        width: 90%;
+    }
 }
