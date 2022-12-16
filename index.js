@@ -3,6 +3,7 @@ const btnAdd = document.querySelectorAll('button.btn-ctrl-add');
 const btnLess = document.querySelectorAll('button.btn-ctrl-less');
 const totalPrice = document.querySelector('p.total');
 
+
 var newprice = [];
 var cont = [];
 var tot=0;
@@ -34,4 +35,17 @@ for(let i=0; i<qtd.length; i++){
     })
     
 }
-console.log(tot)
+
+/*------------------ Form Checkout ---------------*/
+const submit = document.querySelector('button.submit');
+const email = document.querySelector('input.email');
+const pEmail = document.querySelector('p.email-p');
+
+submit.addEventListener('click', ()=>{
+    if(email.value.length == 0){
+        pEmail.innerHTML = 'You need to write the correct email';
+    }else if (email.value != 0){
+        var emailTract = email.value0.split('.');
+        console.log(emailTract)
+    }
+})

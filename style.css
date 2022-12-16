@@ -33,9 +33,13 @@ p{
 }
 .tab-1{
    width: 600px;
+   position: relative;
 }
  .tab-2{
     width: 385px;
+}
+.alert{
+    color: red;
 }
 /*-----------Form Style --------------- */
 .tab-1 input{
@@ -140,6 +144,16 @@ input.check{
     height: 21.2px;
     color: #e0e0e0;
     background-color: #8f8c8c;
+}
+.submit{
+    width: 166px;
+    height: 54px;
+    border: none;
+    background-color: #f2994a;
+    color: white;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-left: 50%;
 }
 /*-----------Fotter Style ----------------*/
 footer{
