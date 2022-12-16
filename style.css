@@ -130,6 +130,9 @@ input.check{
 .newprice{
     color: #f2994a;
 }
+.oldprice{
+    text-decoration: line-through;
+}
 .btn-ctrl{
     border: none;
     border-radius: 4px;
