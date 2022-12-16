@@ -8,7 +8,6 @@ body{
     align-items: center;
     width: 100%;
     font-family: Montserrat;
-    border: solid 1px saddlebrown;
 }
 .body-project{
     width: 75%;
@@ -18,36 +17,65 @@ h1{
     font-size: 36px;
     margin-bottom: 50px;
 }
+h2{
+    font-weight: 600;
+    font-size: 18px;
+}
 p{
-    margin: 5px 0px 5px 0px;
+    margin: 7px 0px 7px 0px;
 }
 .tab{
-    height: 500px;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
-    border: solid 1px rgb(19, 29, 139);
 }
 .tab-1{
     width: 70%;
 }
+.tab-1, .tab-2{
+    border: solid 1px red;
+}
 /*-----------Form Style --------------- */
 .tab-1 input{
     border: none;
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
 }
 .tab-1 input:focus{
     border: none;
     outline: none;
 }
-.email-form{
-    height: 40px;
-    border: solid 1px silver;
+.input-form{
+    width: 465px;
+    height:56px;
+    border: solid 1px #828282;
     border-radius: 6px;
     display: flex;
     align-items: center;
+}
+.input-form img{
+    margin: 0px 4px 0px 4px;
 }
 .email, .phone{
     height: 36px;
     margin-left: 4px;
     font-size: 18px;
+}
+.ship-info {
+    margin: 30px 0px 2px 0px;
+}
+.ship-info h2{
+    margin: 15px 0px 15px 0px;
+}
+.group-form .input-form{
+    width: 95%;
+}
+.group-form{
+    display: grid;
+    width: 470px;
+    grid-template-columns: repeat(2, 50%);
+}
+input.check{
+    width: 23px;
 }
