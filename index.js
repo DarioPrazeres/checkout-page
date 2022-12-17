@@ -42,10 +42,23 @@ const email = document.querySelector('input.email');
 const pEmail = document.querySelector('p.email-p');
 
 submit.addEventListener('click', ()=>{
-    if(email.value.length == 0){
-        pEmail.innerHTML = 'You need to write the correct email';
-    }else if (email.value != 0){
-        var emailTract = email.value0.split('.');
-        console.log(emailTract)
-    }
+    ValidateEmail(email);
 })
+function ValidateEmail(input) {
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (input.value.match(validRegex)) {
+    //alert("Valid email address!");
+    //document.form1.text1.focus();
+    return true;
+  } else {
+    pEmail.innerHTML = "Invalid email address!";
+    //document.form1.text1.focus();
+    return false;
+  }
+}
+/*
+
+
+
+}
+*/

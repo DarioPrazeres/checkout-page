@@ -78,6 +78,10 @@ p{
 .group-form .input-form{
     width: 95%;
 }
+select{
+    border: none;
+    font-size: 18px;
+}
 .group-form{
     display: grid;
     width: 470px;

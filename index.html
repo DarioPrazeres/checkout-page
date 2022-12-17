@@ -26,35 +26,40 @@
         <p>Phone</p>
         <div class="input-form">
           <img src="./img/phone.png" width="25px" alt="">
-          <input type="text" class="phone" placeholder="Enter your phone..." name="" id="" required>
+          <input type="number" class="phone" placeholder="Enter your phone..." name="" id="" required min="9" max="12">
         </div>
         <div class="ship-info">
           <h2>Shipping address</h2>
           <p>Full name</p>
           <div class="input-form">
             <img src="./img/acount.png" width="25px" alt="">
-            <input type="text" class="phone" placeholder="Rodney Cotton" name="" id="" required>
+            <input type="text" class="name" placeholder="Rodney Cotton" name="" id="" min="3" required>
           </div>
           <p>Address</p>
           <div class="input-form">
             <img src="./img/home.png" width="25px" alt="">
-            <input type="text" class="phone" placeholder="Your address..." name="" id="" required>
+            <input type="text" class="address" placeholder="Your address..." name="" id="" required>
           </div>
           <p>City</p>
           <div class="input-form">
             <img src="./img/city.png" width="25px" alt="">
-            <input type="text" class="phone" placeholder="Your city..." name="" id="" required>
+            <input type="text" class="city" placeholder="Your city..." name="" id="" required>
           </div>
           <div class="group-form">
             <p class="label-country">Country</p>
             <p class="label-country">Postal Code</p>
             <div class="input-form">
               <img src="./img/earth.png" width="25px" alt="">
-              <input type="text" class="phone" placeholder="Your city..." name="" id="" required>
+              <select name="" id="" class="country">
+                <option value="Angola">Angola</option>
+                <option value="USA">USA</option>
+                <option value="Englad">Englad</option>
+                <option value="Canada">Canada</option>
+              </select>
             </div>
             <div class="input-form">
               <img src="./img/postalCode.png" width="25px" alt="">
-              <input type="text" class="phone" placeholder="Your city..." name="" id="" required>
+              <input type="text" class="postal" placeholder="Your postal code..." name="" id="" required>
             </div>
           </div>
         </div>
